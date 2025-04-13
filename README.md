@@ -31,7 +31,7 @@ Dự án này thực hiện phân tích dữ liệu kinh doanh từ bộ dữ li
 pip install pandas numpy matplotlib seaborn google.colab
 ```
 ## Phân tích dữ liệu
-*Question 1*: Tháng nào kinh doanh tốt nhất? Doanh thu tháng đó là bao nhiêu?
+**Question 11**: Tháng nào kinh doanh tốt nhất? Doanh thu tháng đó là bao nhiêu?
 Để trả lời câu hỏi này, ta cần tính tổng doanh thu hàng tháng và xác định tháng có doanh thu cao nhất.
 ```
 all_data['Sales'] = all_data['Quantity Ordered'].astype('int') * all_data['Price Each'].astype('float')
@@ -49,7 +49,7 @@ plt.ylabel('Sales in USD ($ Million)')
 plt.xlabel('Month number')
 plt.show()
 ```
-*Question 2*: Thành phố nào bán được nhiều sản phẩm (product) nhất?
+**Question 2**: Thành phố nào bán được nhiều sản phẩm (product) nhất?
 Để trả lời câu hỏi này, ta cần nhóm dữ liệu theo thành phố và tính tổng số sản phẩm bán ra.
 ```
 city_sales_df = all_data.groupby(['City']).sum()
@@ -63,7 +63,7 @@ plt.xlabel('City')
 plt.xticks(keys, rotation='vertical', size=8)
 plt.show()
 ```
-*Question 33*: Khoảng thời gian nào ta nên hiển thị quảng cáo để tăng khả năng mua hàng của khách?
+**Question 3**: Khoảng thời gian nào ta nên hiển thị quảng cáo để tăng khả năng mua hàng của khách?
 Chúng ta cần phân tích theo giờ và tìm ra giờ nào có lượng mua hàng cao nhất.
 ```
 from datetime import datetime
@@ -82,7 +82,7 @@ plt.xticks(hourly_sale_df.index)
 plt.grid()
 plt.show()
 ```
-*Question 44*: Sản phẩm được bán nhiều nhất là gì? Tại sao?
+**Question 44**: Sản phẩm được bán nhiều nhất là gì? Tại sao?
 Chúng ta sẽ nhóm theo sản phẩm và tính số lượng bán ra, sau đó trực quan hóa dữ liệu.
 ```
 product_df = all_data.groupby('Product').sum()
