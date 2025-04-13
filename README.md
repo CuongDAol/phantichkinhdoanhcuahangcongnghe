@@ -82,7 +82,7 @@ plt.xticks(hourly_sale_df.index)
 plt.grid()
 plt.show()
 ```
-**Question 44**: Sản phẩm được bán nhiều nhất là gì? Tại sao?
+**Question 4**: Sản phẩm được bán nhiều nhất là gì? Tại sao?
 Chúng ta sẽ nhóm theo sản phẩm và tính số lượng bán ra, sau đó trực quan hóa dữ liệu.
 ```
 product_df = all_data.groupby('Product').sum()
