@@ -20,11 +20,11 @@ Trước khi phân tích, dữ liệu thô đã trải qua các bước làm s�
 * **Xử lý dữ liệu nhiễu:** Loại bỏ các dòng tiêu đề cột bị lặp lại trong nội dung dữ liệu (do quá trình gộp file).
 * **Xử lý giá trị thiếu:** Loại bỏ 545 dòng chứa giá trị rỗng (NaN) để đảm bảo tính toàn vẹn.
 * **Chuẩn hóa kiểu dữ liệu:** Chuyển đổi cột `Quantity Ordered` và `Price Each` từ dạng chuỗi (string) sang dạng số (numeric) để tính toán. Chuyển đổi `Order Date` sang định dạng thời gian chuẩn.
-* **Tạo biến mới (Feature Engineering):** Tách thêm các cột `Month` (Tháng), `Hour` (Giờ), `City` (Thành phố) và tính cột `Sales` (Doanh thu = Số lượng * Đơn giá).
+* **Tạo biến mới :** Tách thêm các cột `Month` (Tháng), `Hour` (Giờ), `City` (Thành phố) và tính cột `Sales` (Doanh thu = Số lượng * Đơn giá).
 
 ---
 
-## 2. Các Phát Hiện Chính (Key Insights)
+## 2. Các Phát Hiện Chính 
 
 ### 2.1. Thời điểm kinh doanh tốt nhất trong năm
 * **Tháng doanh thu cao nhất:** Tháng 12 (đạt ~4.6 triệu USD).
@@ -65,7 +65,7 @@ Trước khi phân tích, dữ liệu thô đã trải qua các bước làm s�
 
 ---
 
-## 3. Đề Xuất Hành Động Chiến Lược (Action Plan)
+## 3. Đề Xuất Hành Động Chiến Lược 
 
 Dựa trên các insight thu được, dưới đây là kế hoạch hành động cụ thể:
 
@@ -74,7 +74,7 @@ Dựa trên các insight thu được, dưới đây là kế hoạch hành đ�
 * **Target theo địa lý:** Dồn ngân sách marketing lớn nhất cho khu vực **San Francisco**, tiếp theo là LA và NYC. Cân nhắc các nội dung quảng cáo mang tính địa phương hóa cho các khu vực này.
 * **Chiến dịch "Pre-Holiday":** Khởi động các chương trình khuyến mãi cuối năm ngay từ tháng 10 để tối đa hóa đà tăng trưởng của Quý 4.
 
-### 3.2. Chiến lược Bán hàng (Sales Strategy)
+### 3.2. Chiến lược Bán hàng 
 * **Bán chéo (Cross-selling):** Triển khai hệ thống gợi ý tự động. Ví dụ: Khách mua điện thoại/laptop -> Gợi ý mua thêm dây sạc, tai nghe hoặc pin dự phòng.
 * **Combo sản phẩm (Bundling):** Tạo các gói combo để tăng giá trị trung bình đơn hàng (AOV).
     * *Ví dụ:* Combo "Làm việc tại nhà" (Laptop + Màn hình + Dây kết nối).
